@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+            <section class="screen active" id="start-screen">
+                <h1>Stadew Valley Quiz!</h1>
+                <p>Hora de testar os seus conhecimentos</p>
+                <button id="start-btn">Start Quiz</button>
+            </section>
+
+        
+            <section class="screen" id="quiz-screen">
+
+                <header>
+                    <h2 id="question-text">Pergunta aqui</h2>
+                    <nav class="quiz-info">
+                           <p>
+                            Questões
+                             <span id="current-question">1</span> de
+                             <span id="total-questions">5</span>
+                            </p>
+                        <p>Pontuação: <span id="score">0</span></p>
+                    </nav>
+                </header>
+
+
+                <section class="quiz-answers" id="quiz-answers">
+                    <!-- PErguntas vão ser iniciadas depois de pressionar o botão start-->
+                </section>
+
+
+
+                <footer class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </footer>
+                    
+            </section>
+
+            <section class="screen" id="result-screen">
+                <h1>Resultados do Quiz!</h1>
+                  <div class="result-info">
+                    <p>Sua Pontuação é <span id="final-score">0</span> de 
+                        <span id="max-score">5</span></p>
+
+                    <div id="result-message">Bom Trabalho!</div>    
+                  </div>
+                <button id="restart-btn">Reiniciar Quiz</button>
+            </section>
+
+    </main> 
+       <script src="script.js"></script>
+</body>
+</html>

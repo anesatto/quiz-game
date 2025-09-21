@@ -20,7 +20,7 @@ const questions = [
         questions: 'Qual é o nome da cidade vizinha de Stardew Valley?',
         answers: [
             {text: 'Zuzu City', correct: true},
-            {text: 'Pelican Town', correct: false},
+            {text: 'Vila Pelicano', correct: false},
             {text: 'Rosewood Town', correct: false},
             {text: 'Junimo Village', correct: false}
         ],
@@ -48,8 +48,8 @@ const questions = [
     {
         questions: 'Qual é o último andar acessível da mina tradicional?',
         answers: [
-            {text: '120', correct: true},
             {text: '100', correct: false},
+            {text: '120', correct: true},
             {text: '110', correct: false},
             {text: '150', correct: false}
              ],
@@ -63,8 +63,52 @@ const questions = [
             {text: 'Kent', correct: false},
             {text: 'Rasmodius', correct: false}
              ],
+    },
+    {
+        questions: 'Qual é o nome da guilda que cuida dos aventureiros?',
+        answers: [
+            {text: 'Guilda de Stardew', correct: false},
+            {text: 'Guilda dos Caçadores', correct: false},
+            {text: 'Guilda dos Aventureiros', correct: true},
+            {text: 'Guilda do Vale', correct: false},
+                ],
+    },
+    {
+        questions: 'Qual animal é necessário para conseguir trufas?',
+        answers: [
+            {text: 'Vaca', correct: false},
+            {text: 'Porco', correct: true},
+            {text: 'Cabra', correct: false},
+            {text: 'Galinha', correct: false}
+                ],
+    },
+    {
+        questions: 'Quem mora na cabana perto da praia?',
+        answers: [
+            {text: 'Willy', correct: false},
+            {text: 'Clint', correct: false},
+            {text: 'Elliott', correct: true},
+            {text: 'Leah', correct: false}
+                ],
+    },
+    {
+        questions: 'Qual desses personagens NÃO pode se tornar seu cônjuge?',
+        answers: [
+            {text: 'Marnie', correct: true},
+            {text: 'Penny', correct: false},
+            {text: 'Harvey', correct: false},
+            {text: 'Maru', correct: false}
+                ],
+    },
+    {
+        questions: 'Na Ilha Gengibre, qual recurso especial você coleta para desbloquear áreas e construir coisas?',
+        answers: [
+            {text: 'Cocos dourados', correct: false},
+            {text: 'Nozes douradas', correct: true},
+            {text: 'Frutas estrela', correct: false},
+            {text: 'Pedras preciosas da ilha', correct: false}
+                ],
     }
-
 ];
 
 /*GAME VARIABLES*/
@@ -133,7 +177,7 @@ function selectAnswers(event) {
         if(button.dataset.correct === 'true') {
             button.classList.add('correct');
         } else if(button === selectedButton) {
-            button.classList.add('incorrect');
+            button.classList.add('wrong');
         }
     });
 
@@ -173,7 +217,6 @@ function showResult() {
         resultMessage.textContent = 'Parece que você não conhece muito Stardew Valley. Tente novamente!';
     }
 }
-
 
 
 

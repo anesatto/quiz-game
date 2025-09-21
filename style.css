@@ -1,15 +1,5 @@
 UTF-8
 
-/* :root {
-  --cor0: #f8f0e5;
-  --cor1: #eadbc8;
-  --cor2: #e86a33;
-  --cor3: #333;
-  --cor4: #666;
- } */
-
-
-
 * {
    margin: 0;
    padding: 0;
@@ -39,7 +29,7 @@ main {
 
 .screen {
     display: none;
-    padding:  2rem;
+    padding: 2rem;
     text-align: center
 }
 
@@ -58,8 +48,8 @@ main {
 }
 
 #start-screen p {
-    color: var(--cor4);
-    font-size: 30px;
+    color: #666;
+    font-size: 20px;
     margin-bottom: 1.1rem;
 }
 
@@ -73,7 +63,7 @@ header {
     color: #333;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    line-height: 1.4
+    line-height: 1.4rem;
 }
 
 .quiz-info {
@@ -85,7 +75,7 @@ header {
 
 .quiz-answers {
     display: flex;
-    background-color: #f8f0e5;
+    background-color: white;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 25px;
@@ -120,8 +110,7 @@ header {
     color: #dc3545;
 }
 
-
-.progess-bar {
+.progress-bar {
     height: 10px;
     background-color: #f8f0e5;
     border-radius: 5px;
@@ -146,20 +135,20 @@ header {
 .result-info {
     background-color: #f8f0e5;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 30px;
 }
 
 .result-info p {
   font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 1rem;
+  color: #666;
+  margin-bottom: 1rem; 
 }
 
 .result-message {
     font-size: 1.5rem;
-    font-weight:  600;
-    color: #e86a33;
+    font-weight: 600;
+    color: #666;
 }
 
 button {
